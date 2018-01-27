@@ -1,2 +1,5 @@
+<button class="btn btn-primary" [disabled]="!allowNewServer">Add Button</button>
+<p>Server with ID {{ serverId }} is {{ getServerStatus() }}</p>
+<p [innerText]="allowNewServer"></p>
 <app-server></app-server>
 <app-server></app-server>

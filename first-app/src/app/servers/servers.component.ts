@@ -7,9 +7,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServersComponent implements OnInit {
 
-  constructor() { }
 
-  ngOnInit() {
+  // tslint:disable-next-line:no-inferrable-types
+  serverId: number = 10;
+  // tslint:disable-next-line:no-inferrable-types
+  serverStatus: string = 'online';
+
+  allowNewServer = false;
+
+  constructor(){
+    setTimeout(()=>{
+      this.allowNewServer = true;
+    }, 2000);
   }
+
+  getServerStatus(){
+    return this.serverStatus;
+  }
+
+  ngOnInit(){
+
+  }
+
+
 
 }
