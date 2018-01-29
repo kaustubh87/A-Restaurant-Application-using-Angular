@@ -12,11 +12,14 @@ export class ServersComponent implements OnInit {
   serverName = '';
   username = '';
   serverCreated = false;
+  serverStatus: string = 'offline';
 
   constructor(){
-    setTimeout(()=>{
-      this.allowNewServer = true;
-    }, 2000);
+   this.serverStatus = Math.random() > 0.5 ? 'online': 'offline';
+  }
+
+  getServerStatus() {
+
   }
 
 
