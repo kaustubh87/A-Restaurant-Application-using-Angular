@@ -34,7 +34,7 @@ export class CockpitComponent implements OnInit {
       {
         serverName: this.newServerName,
         serverContent: this.newServerContent
-        serverContent1: this.newServerContent
+
       });
 
   }
